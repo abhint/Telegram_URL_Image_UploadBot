@@ -6,7 +6,8 @@
 
 
 import os
-from pyrogram import Client,Filters
+from pyrogram import Client
+from pyrogram import filters as Filters
 from hurry.filesize import size
 import requests
 import shutil 

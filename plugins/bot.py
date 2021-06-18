@@ -24,7 +24,7 @@ async def start(client, message):
     await client.send_message(
         
         chat_id=message.chat.id,
-        text=f"<b>Hey {message.from_user.first_name},\nThis is an image download bot. Created using the available open-source code.\nSource Code: https://github.com/Abhijith-cloud/Telegram_URL_Image_UploadBot/ \n© @thankappan369</b>",
+        text=f"<b>Hey {message.from_user.first_name},\nThis is an image download bot. Created using the available open-source code.\nSource Code: https://github.com/AbhijithNT/Telegram_URL_Image_UploadBot/ \n© @thankappan369</b>",
         reply_to_message_id=message.message_id,
         parse_mode = "html" 
     )

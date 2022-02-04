@@ -23,7 +23,7 @@ async def start(client, message):
     await client.send_message(
         
         chat_id=message.chat.id,
-        text=f"<b>Hey {message.from_user.first_name},\nThis is an image download bot. Created using the available open-source code.\nSource Code: https://github.com/AbhijithNT/Telegram_URL_Image_UploadBot/ \n© @thankappan369</b>",
+        text=f"<b>Hey {message.from_user.first_name},\nThis is an image download bot. Created using the available open-source code.\nSource Code: https://github.com/abhint/Telegram_URL_Image_UploadBot/ \n© @abhint</b>",
         reply_to_message_id=message.message_id,
         parse_mode = "html" 
     )
@@ -33,7 +33,7 @@ async def start(client, message):
 async def help(client, message):
     await client.send_message( 
         chat_id=message.chat.id,
-        text=f"<b>Hey {message.from_user.first_name},\nBot to upload the image to Telegram from direct links.\ne.g: https://website.com/img.png \nContact Admin © @thankappan369</b>",
+        text=f"<b>Hey {message.from_user.first_name},\nBot to upload the image to Telegram from direct links.\ne.g: https://website.com/img.png \nContact Admin © @abhint</b>",
         reply_to_message_id=message.message_id,
         parse_mode = "html" 
     )
@@ -103,7 +103,7 @@ async def echo(bot , update):
             # Send The Image to User
             await update.reply_photo(
                 photo=filename,
-                caption='@thankappan369',
+                caption='@abhint',
                 progress=progress
 
             )
@@ -113,7 +113,7 @@ async def echo(bot , update):
         except Exception as error:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text=f'Sorry Somting is\n{error}\nContact Admin @thankappan369'
+                text=f'Sorry Somting is\n{error}\nContact Admin @abhint'
             )
         try:
             os.remove(filename)

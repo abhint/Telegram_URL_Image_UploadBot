@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # This is bot coded by Abhijith N T and used for educational purposes only
 # https://github.com/abhint
 # (c) Abhijith N T
